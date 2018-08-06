@@ -17,7 +17,8 @@ const styles = theme => ({
         padding: 0,
         transform: 'translate3d(0px, 0px, 9px)',
         overflow: 'hidden',
-        position: 'relative'
+        position: 'relative',
+        zIndex: -1
     },
     title: {
         textAlign: 'center'

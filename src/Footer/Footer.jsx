@@ -72,6 +72,7 @@ const Footer = (props) => {
     const { classes } = props
 
     const socials = [ 'Facebook', 'Github', 'Vk', 'Gmail' ]
+    const links = [ 'https://www.facebook.com/cyril.prosvirov', 'https://github.com/akado2009', 'https://vk.com/prosvirov_k', 'mailto:prosvirov.k@gmail.com' ]
 
     return (
         <div className={classNames('container', classes.footer)}>
@@ -84,6 +85,7 @@ const Footer = (props) => {
                                     variant="contained"
                                     color="primary"
                                     className={classNames(classes[name.toLowerCase()], classes.button)}
+                                    onClick={() => window.open(`${links[i]}`, "_blank")}
                                 >
                                     {name}
                                 </Button>
